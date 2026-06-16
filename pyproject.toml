@@ -1,0 +1,21 @@
+# pyproject.toml
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "packer"
+version = "1.0.0"
+description = "Pack files into AES-encrypted videos"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy==1.26.4",
+    "imageio[ffmpeg]==2.34.0",
+    "cryptography==42.0.5"
+]
+
+[project.optional-dependencies]
+test = ["pytest==8.0.2"]
+
+[project.scripts]
+packer = "packer:main"
