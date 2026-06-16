@@ -19,3 +19,6 @@ test = ["pytest==8.0.2"]
 
 [project.scripts]
 packer = "packer:main"
+
+[tool.setuptools]
+py-modules = ["packer"]
