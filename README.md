@@ -4,6 +4,10 @@
 
 <h1 align="center">Youtube File System</h1>
 
+<p align="center">
+  <img src="assets/social_preview.png" width="640" alt="YTFS Social Preview">
+</p>
+
 You know the drill. Paying monthly for an S3 bucket or Google Drive to hold cold-storage archives you look at once a decade. The cloud is just someone else's computer. YouTube is also someone else's computer, but they let you upload 1080p videos for free.
 
 `ytfs` securely packs your files or folders into colored static, allowing you to use video hosting platforms as an infinite, free hard drive.
@@ -19,6 +23,12 @@ With `ytfs`:
 ytfs pack /path/to/my_folder
 ```
 
+## Demo
+
+<p align="center">
+  <img src="assets/cli_demo.gif" width="600" alt="YTFS CLI Demo">
+</p>
+
 ## Features & Upgrades
 
 * **Interactive Terminal UI:** Run `ytfs` without arguments to launch a guided, beautiful wizard interface powered by `questionary` and `rich`.
@@ -28,6 +38,12 @@ ytfs pack /path/to/my_folder
 * **Binary RGB:** Instead of black and white (1 bit), we use pure Red, Green, and Blue channels, securely packing 3 bits per macro-block.
 * **Built-in AES-128:** Your data is encrypted *before* it becomes a video using PBKDF2 (480,000 iterations) + AES. If a bit flips, you'll know. If someone downloads your video, they just see noise.
 * **Performance Benchmarks:** Run a speed test with the new `benchmark` command to check packing and unpacking performance on your system.
+
+### Encryption & Key Derivation
+
+<p align="center">
+  <img src="assets/code_snippet.png" width="500" alt="YTFS Encryption">
+</p>
 
 ## How it works
 
