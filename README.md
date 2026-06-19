@@ -39,12 +39,6 @@ ytfs pack /path/to/my_folder
 * **Built-in AES-128:** Your data is encrypted *before* it becomes a video using PBKDF2 (480,000 iterations) + AES. If a bit flips, you'll know. If someone downloads your video, they just see noise.
 * **Performance Benchmarks:** Run a speed test with the new `benchmark` command to check packing and unpacking performance on your system.
 
-### Encryption & Key Derivation
-
-<p align="center">
-  <img src="assets/code_snippet.png" width="500" alt="YTFS Encryption">
-</p>
-
 ## How it works
 
 Before writing pixels, the engine stops at the core requirements:
