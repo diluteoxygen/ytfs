@@ -3,3 +3,5 @@ __pycache__/
 *.zip
 *.7z
 .env
+venv/
+Output/
