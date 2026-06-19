@@ -12,4 +12,4 @@ jobs:
           python-version: "3.10"
       - run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - run: pip install -e .[test]
-      - run: pytest test_packer.py -v
+      - run: pytest test_ytfs.py -v
